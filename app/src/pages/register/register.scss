@@ -1,0 +1,77 @@
+page-register {
+  .forgot {
+    color: color($colors, primary, base);
+    text-align: center;
+  }
+
+  .button-md,
+  .button-ios {
+    height: 5.0rem;
+    background-color: color($colors, primary, base);
+    color: #fff;
+  }
+
+  .content-md,
+  .content-ios {
+    background: #fff;
+    vertical-align: middle;
+  }
+
+  .cap {
+    color: #fff !important;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: color($colors, primary);
+
+    h1 {
+      font-size: 45px;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  p {
+    color: color($colors, primary, base);
+  }
+
+  .item-md,
+  .item-ios {
+    background-color: transparent;
+    color: color($colors, primary, base);
+  }
+
+  .img {
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      height: 200px;
+    }
+  }
+
+  .item-input .label-md,
+  .item-select .label-md,
+  .item-datetime .label-md {
+    color: color($colors, primary, base);
+  }
+
+  .passwordIcon {
+    font-size: 2rem !important;
+    position: relative !important;
+    top: 22px !important;
+    margin: 0 auto !important;
+  }
+
+  ion-footer {
+    position: fixed;
+  }
+
+  .item-input-has-focus,
+  .label-md[stacked],
+  .input-has-focus .label-md[stacked] {
+    color: color($colors, primary, base) !important;
+  }
+}

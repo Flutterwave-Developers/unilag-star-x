@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="cap">
+    <h1>Log In</h1>
+    <p>Welcome back!</p>
+  </div>
+  <div padding>
+    <div class="img">
+      <!-- <img  src="assets/imgs/cbtexampro.png" alt=""> -->
+    </div>
+
+    <ion-list>
+      <form>
+        <ion-item>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input [type]="passwordType"></ion-input>
+        </ion-item>
+        <br />
+        <button type="submit" full block ion-button (click)="homePage()">
+          Log In
+        </button>
+        <p class="forgot">
+          Forgot your password?
+        </p>
+      </form>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer>
+  <p class="forgot">
+    Don't have an account? <strong (click)="gotoSignUp()">Sign Up</strong>
+  </p>
+</ion-footer>

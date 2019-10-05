@@ -1,0 +1,165 @@
+* {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.content-side {
+  background: color($colors, dark, base);
+
+  p {
+    color: #fff;
+  }
+
+  .item-md {
+    background: transparent;
+    color: #fff;
+  }
+
+  .menu_links {
+    padding-top: 15px;
+    color: #fff;
+    width: 100%;
+  }
+
+  .log_out {
+    background: transparent;
+    font-size: 16px;
+  }
+
+  .single_link {
+    color: #fff;
+    font-size: 14px;
+    padding: 25px;
+  }
+
+  .page_icons {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.spinner-md-crescent circle {
+  stroke: color($colors, secondary);
+}
+
+.mail-side {
+  background: color($colors, primary, base);
+  padding-top: 40px;
+
+  .item-md {
+    padding: 20px 20px 0px 20px;
+    background: none;
+    color: #fff;
+
+    button {
+      font-weight: 600;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}
+
+.footer-md::before,
+.tabs-md[tabsPlacement="bottom"]>.tabbar::before {
+  height: 0px;
+  background-image: none;
+}
+
+.center-btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+
+// ion-modal {
+//     ion-backdrop {
+//         visibility: visible;
+//     }
+//     .modal-wrapper {
+//         width: 86%;
+//         height: 76%;
+//         margin: 7%;
+//         position: absolute;
+//         overflow: hidden;
+//     }
+// }
+
+.header-side {
+
+  p {
+    color: #fff;
+  }
+
+  .toggle-md {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .toggle-md-track-background-color-off {
+    background: color($colors, light, base);
+  }
+
+  .toolbar-md {
+    height: 170px;
+  }
+
+  .toolbar-background-md {
+    background: color($colors, primary, base);
+  }
+
+  .flex {
+    display: flex;
+
+    // .img {
+    //     width: 35%
+    //     img{
+    //         height: 100px;
+    //         width: 100px;
+    //         border-radius: 50%;
+    //         object-fit: cover;
+    //         margin-left: 10px;
+    //     }
+    // }
+    .details {
+      width: 100%;
+
+      h3 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.successToast {
+  .toast-message {
+    border-radius: 0.65rem !important;
+    background-color: color($colors, secondary);
+    color: #fff;
+  }
+}
+
+.errorToast {
+  .toast-message {
+    border-radius: 0.65rem !important;
+    background-color: color($colors, danger);
+    color: #fff;
+  }
+}
+
+ng-component {
+  &.app-root {
+    z-index: 25;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: color($colors, primary, base);
+}

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="list"></ion-icon>
+    </button>
+    <ion-title>Create New Patient</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-item>
+      <ion-label stacked>Patient ID</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Age</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Gender</ion-label>
+      <ion-select>
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Diagnosis Description</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Additional Details</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <br />
+
+    <button type="submit" full block ion-button (click)="homePage()">
+      Create Patient
+    </button>
+  </form>
+</ion-content>

@@ -1,0 +1,34 @@
+page-notes {
+
+  .flex-items {
+    display: flex;
+    background-color: #fff;
+  }
+
+
+  .send {
+    color: #603CD7;
+    font-size: 30px;
+    padding-left: 40px;
+    align-self: center;
+  }
+
+  .toolbar-background-md {
+    background-color: color($colors, primary, base);
+    border: none;
+  }
+
+  .content-md,
+  .content-ios {
+    background-color: #FAFAFA;
+  }
+
+
+  .toolbar-title-md {
+    color: #fff !important;
+  }
+
+  ion-navbar>button {
+    color: #fff !important;
+  }
+}

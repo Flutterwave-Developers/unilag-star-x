@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="list"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons class="not-icon" end>
+      <button (click)="openNotifications()" disabled ion-button icon-only>
+        <ion-icon name="notifications-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="balance_bg">
+    <div class="balance">
+      <h1>Hello user,</h1>
+      <h5>Let's get started.</h5>
+    </div>
+  </div>
+  <!-- Content PlaceHolder-->
+
+  <!--End of Content PlaceHolder-->
+
+  <!-- After Fetched Data-->
+  <!--Important Cards-->
+  <div class="important_cards">
+    <div>
+      <ion-row>
+        <ion-col col-12>
+          <ion-card>
+            <ion-card-content>
+              <ion-row>
+                <ion-col col-12>
+                  <ion-icon
+                    class="icons"
+                    color="primary"
+                    name="person-add"
+                  ></ion-icon>
+                </ion-col>
+
+                <ion-col col-12>
+                  <h1>20</h1>
+                  <br />
+                  <h6>Patients</h6>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col col-12>
+          <ion-card>
+            <ion-card-content>
+              <ion-row>
+                <ion-col col-12>
+                  <ion-icon
+                    class="icons"
+                    color="primary"
+                    name="folder"
+                  ></ion-icon>
+                </ion-col>
+
+                <ion-col col-12>
+                  <h1>300</h1>
+                  <br />
+                  <h6>Notes</h6>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div padding>
+      <button class="real_btn" (click)="createPatient()" full round ion-button>
+        Create Patient
+      </button>
+    </div>
+  </div>
+  <!--End of fetch Data-->
+</ion-content>
