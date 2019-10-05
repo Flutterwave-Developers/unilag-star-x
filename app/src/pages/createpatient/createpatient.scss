@@ -1,0 +1,21 @@
+page-createpatient {
+  .toolbar-background-md {
+    background-color: color($colors, primary, base);
+    border: none;
+  }
+
+  .content-md,
+  .content-ios {
+    background-color: #FAFAFA;
+  }
+
+
+  .toolbar-title-md {
+    color: #fff !important;
+  }
+
+  ion-navbar>button {
+    color: #fff !important;
+  }
+
+}

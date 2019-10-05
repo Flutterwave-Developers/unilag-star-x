@@ -15,6 +15,19 @@ const users = mongoose.Schema({
     type: String,
     unique: true,
     required: true
+  },
+  user_type: {
+    type: String,
+    enum: ["user", "admin", "dev"],
+    required: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now
   }
 });
 
